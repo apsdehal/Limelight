@@ -1,0 +1,26 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+$hover-text: #AC2832;
+$main-text: #DFD297;
+/* Icons */
+@import "../icons/styles.css";
+ .icon--inline {
+  margin-right: 5px;
+}
+
+html {
+  min-width: 90%;
+  body{
+    max-width: 90%;
+    margin: auto;
+    position:relative;
+    background: #DFD297 url("../img/bg_pattern.jpg") repeat-x;
+  }
+}
