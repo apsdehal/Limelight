@@ -7,7 +7,7 @@
   <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin'>
   <link rel='stylesheet' href='/assets/css/bootstrap.min.css'>
 
-  <link rel='stylesheet' href='/assets/css/style.css'>
+  <link rel='stylesheet' href='/assets/css/screen.css'>
   <link rel='canonical' href='{{ site.production_url }}{{ page.url }}'>
   <link rel='alternate' type='application/rss+xml' href='/rss.xml'>
   <title>{% if page.title %} {{ page.title }} {% else %} {{ site.name }}  {% endif %}</title>
