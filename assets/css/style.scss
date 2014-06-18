@@ -27,6 +27,12 @@ html {
     background: #DFD297 url("../img/bg_pattern.jpg") repeat-x;
     font: 16px/1.5 sans-serif;
     color: #333;
+    a {
+      color:$hover-text;
+      &:hover{
+        color: $hover-text;
+      }
+    }
     p,
     nav,
     table,
@@ -135,9 +141,12 @@ html {
     }
     article,
     aside {
-      background:rgba(0,0,0,0.2);
+      background:rgba(255,255,255,0.6);
+      // background:#fff;
       position: relative;
       border-radius:4px;
+      height: 495px;
+      margin-left: 2%
     }
     article {
       padding: 25px 25px 10px 25px;
@@ -145,7 +154,58 @@ html {
         max-width: 100%;
       }
     }
-
+    aside {
+      padding: 15px 10px 10px 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          padding: 0;
+          margin: 0;
+          background: none;
+          right: 0;
+          &:before {
+            display: none;
+          }
+          a {
+            line-height: 1.9em;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    header {
+      height: 80px;
+      overflow: hidden;
+      font-family: sans-serif;
+      font-weight: 600;
+      margin-left: 2%;
+    }
+    .me {
+      display: inline-block;
+      line-height: 80px;
+      vertical-align: top;
+      float: left;
+      &:hover {
+        background: none;
+      }
+      &:before {
+        display: inline-block;
+        content: '';
+        background: url("../img/avatar.jpeg") center center no-repeat;
+        background-size: contain;
+        border:3px solid #fff;
+        border-radius: 80%;
+        width: 74px;
+        height: 74px;
+        margin: 3px 5px 0 0;
+        vertical-align: top;
+      }
+    }
   }
 }
 
