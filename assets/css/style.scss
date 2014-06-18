@@ -31,7 +31,6 @@ html {
       color:$main-text;
       text-decoration: none;
       &:hover{
-        color: $main-text;
         text-decoration: none;
       }
     }
@@ -51,7 +50,7 @@ html {
           color: $visited-text;
         }
         &:hover {
-          background-color: $hover-text;
+          color: $hover-text;
         }
       }
     }
