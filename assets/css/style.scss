@@ -17,10 +17,62 @@ $main-text: #DFD297;
 
 html {
   min-width: 90%;
-  body{
+  body {
     max-width: 90%;
     margin: auto;
     position:relative;
     background: #DFD297 url("../img/bg_pattern.jpg") repeat-x;
+    font: 15px/1.5 sans-serif;
+    color: #333;
+    p,
+    nav,
+    table,
+    pre,
+    blockquote {
+      margin-bottom: 14px;
+    }
+    header.mobile{
+      display: none;
+    }
   }
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .home article{
+    height: 400px;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 768px){
+  .post ,.error404 aside{
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+@media (max-width: 520px) {
+  .home article{
+    display: none;
+  }
+  .home aside{
+    font-size: 0.9em;
+  }
+  .mobile{
+    font-size: 0.9em;
+    display:block;
+  }
+  .social{
+    display:none;
+  }
+}
+
+@media (max-width: 360px) {
+  
+
+  .blog aside{
+    display:none;
+  }
+  
 }

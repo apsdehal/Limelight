@@ -29,14 +29,14 @@
       </nav>
     </div>
   </header>
-  <div class='mobile'>
+  <header class='mobile'>
     <a class='twitter' href='http://twitter.com/{{site.twitterhandle}}' rel='me'><i class='icon-twitter'></i></a>
     <a class='icon-github' href='http://github.com/{{site.githubhandle}}' rel='me'></a>
     <nav>
       <a href='/blog' class='blog-icon'><span>Blog</span></a>
       <a href='/rss.xml' class='rss'><span><i class='icon-rss'></i> RSS</span></a>
     </nav>
-  </div>
+  </header>
 
   <div class='main' role='main'>
     <article class='col-sm-8 col-md-8'>
