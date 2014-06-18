@@ -7,8 +7,8 @@
   border: 0;
 }
 
-$hover-text: #AC2832;
-$main-text: #DFD297;
+$main-text: #AC2832;
+$hover-text: #DFD297;
 $visited-text: #0171b1;
 
 /* Icons */
@@ -28,9 +28,11 @@ html {
     font: 16px/1.5 sans-serif;
     color: #333;
     a {
-      color:$hover-text;
+      color:$main-text;
+      text-decoration: none;
       &:hover{
-        color: $hover-text;
+        color: $main-text;
+        text-decoration: none;
       }
     }
     p,
@@ -207,7 +209,20 @@ html {
           top: 30%;
           a{
             font-size: 25px;
-            padding: 10px;
+            line-height: 30px;
+            padding: 5px;
+            padding-top: 8px;
+            vertical-align: middle;
+            margin: 0 5px;
+            border-radius: 100%;
+            -webkit-transition: background-color 0.2s;
+            -moz-transition: background-color 0.2s;
+            -ms-transition: background-color 0.2s;
+            -o-transition: background-color 0.2s;
+            transition: background-color 0.2s;
+          }
+          a:hover{
+            background-color: $hover-text;
           }
           left: 5%;
         }
@@ -227,6 +242,11 @@ html {
         }
         span {
           display: inline-block;
+          i{
+            font-size: 20px;
+            position: relative;
+            top: 3px;
+          }
           line-height: 36px;
           padding: 0 10px;
           margin-top: 8px;
@@ -239,7 +259,7 @@ html {
             position: absolute;
             top: 36px;
             left: 0;
-            border-right: 8px solid #9b8651;
+            border-right: 8px solid $hover-text;
             border-bottom: 8px solid #fff;
             }
             &:after {
@@ -247,12 +267,12 @@ html {
             position: absolute;
             top: 36px;
             right: 0;
-            border-left: 8px solid #9b8651;
+            border-left: 8px solid $hover-text;
             border-bottom: 8px solid #fff;
           }
         }
         a:hover span {
-          background-color: #ffd204;
+          background-color:$hover-text;
           margin-top: 0;
         }
       }
