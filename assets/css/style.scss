@@ -184,12 +184,56 @@ html {
       font-family: sans-serif;
       font-weight: 600;
       margin-left: 2%;
+      background:rgba(255,255,255,0.6);
+      nav {
+        margin-top: 14px;
+        margin-right: 11%;
+        float: right;
+        a:link {
+          float: left;
+          height: 44px;
+          overflow: hidden;
+        }
+        a:hover {
+        }
+        span {
+          display: inline-block;
+          line-height: 36px;
+          padding: 0 10px;
+          margin-top: 8px;
+          position: relative;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          transition: all 0.2s;
+            &:before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: 0;
+            border-right: 8px solid #9b8651;
+            border-bottom: 8px solid #fff;
+            }
+            &:after {
+            content: '';
+            position: absolute;
+            top: 36px;
+            right: 0;
+            border-left: 8px solid #9b8651;
+            border-bottom: 8px solid #fff;
+          }
+        }
+        a:hover span {
+          background-color: #ffd204;
+          margin-top: 0;
+        }
+      }
     }
+
     .me {
       display: inline-block;
       line-height: 80px;
       vertical-align: top;
-      float: left;
+      // float: left;
       &:hover {
         background: none;
       }
@@ -205,6 +249,18 @@ html {
         margin: 3px 5px 0 0;
         vertical-align: top;
       }
+    }
+    /* Use this for your github repo's pages */
+    
+    #fork {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url("../img/github.png") 0 0 no-repeat;
+      display: block;
+      width: 149px;
+      height: 149px;
+      text-indent: -9999px;
     }
   }
 }
