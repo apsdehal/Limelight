@@ -93,7 +93,7 @@ html {
         margin: 0 0 4px 12px;
         position: relative;
         &:before {
-          content: '•';
+          content: ' ';
           color: #bbb;
           font-size: 18px;
           position: absolute;
@@ -128,6 +128,24 @@ html {
       margin-right: -25px;
       border-radius: none;
     }
+    blockquote {
+      border-left: 3px solid #ccc;
+      background: #F8F8F8;
+      padding: 15px;
+    }
+    article,
+    aside {
+      background:rgba(0,0,0,0.2);
+      position: relative;
+      border-radius:4px;
+    }
+    article {
+      padding: 25px 25px 10px 25px;
+      img {
+        max-width: 100%;
+      }
+    }
+
   }
 }
 
@@ -147,11 +165,13 @@ html {
   }
 }
 @media (max-width: 520px) {
-  .home article{
-    display: none;
-  }
-  .home aside{
-    font-size: 0.9em;
+  .home{ 
+    article{
+      display: none;
+    }
+    aside{
+      font-size: 0.9em;
+    }
   }
   .mobile{
     font-size: 0.9em;
