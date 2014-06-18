@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang=en class='{{ page.class }}'>
+  <head>
+  <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin'>
+  <link rel='stylesheet' href='/assets/css/bootstrap.min.css'>
+
+  <link rel='stylesheet' href='/assets/css/style.css'>
+  <link rel='canonical' href='{{ site.production_url }}{{ page.url }}'>
+  <link rel='alternate' type='application/rss+xml' href='/rss.xml'>
+  <title>{% if page.title %} {{ page.title }} {% else %} {{ site.name }}  {% endif %}</title>
+  </head>
+  <header>
+    <div class='social'>
+      <a class='twitter' href='http://twitter.com/apsdehal' rel='me'><i class='icon-twitter'></i></a>
+      <a class='github' href='http://github.com/apsdehal' rel='me'>Github</a>
+      <a class='google' href='http://plus.google.com/+AmanpreetSingh94' rel='me'>Google</a>
+      <a class='fb' href='http://facebook.com/amanpreet.singh.18' rel='me'>Facebook</a>
+
+      <div class='info'>
+        <a class='me' rel='author' href='/'>{{ site.name }}</a>
+      </div>
+
+      <nav>
+        <a href='/blog' class='blog-icon'><span>Blog</span></a>
+        <a href='/rss.xml' class='rss'><span><i class='icon-rss'></i> RSS</span></a>
+      </nav>
+    </div>
+  </header>
+  <div class='mobile'>
+    <a class='twitter' href='http://twitter.com/apsdehal' rel='me'><i class='icon-twitter'></i></a>
+    <a class='github' href='http://github.com/apsdehal' rel='me'>Github</a>
+    <nav>
+      <a href='/blog' class='blog-icon'><span>Blog</span></a>
+      <a href='/rss.xml' class='rss'><span><i class='icon-rss'></i> RSS</span></a>
+    </nav>
+  </div>
+
+  <div class='main' role='main'>
+    <article class='col-sm-8 col-md-8'>
