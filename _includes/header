@@ -14,10 +14,10 @@
   </head>
   <header>
     <div class='social'>
-      <a class='twitter' href='http://twitter.com/apsdehal' rel='me'><i class='icon-twitter'></i></a>
-      <a class='github' href='http://github.com/apsdehal' rel='me'>Github</a>
-      <a class='google' href='http://plus.google.com/+AmanpreetSingh94' rel='me'>Google</a>
-      <a class='fb' href='http://facebook.com/amanpreet.singh.18' rel='me'>Facebook</a>
+      <a class='twitter' href='http://twitter.com/{{site.twitterhandle}}' rel='me'><i class='icon-twitter'></i></a>
+      <a class='github' href='http://github.com/{{site.githubhandle}}' rel='me'>Github</a>
+      <a class='google' href='http://plus.google.com/{{site.plushandle}}' rel='me'>Google</a>
+      <a class='fb' href='http://facebook.com/{{site.fbhandle}}' rel='me'>Facebook</a>
 
       <div class='info'>
         <a class='me' rel='author' href='/'>{{ site.name }}</a>
@@ -30,8 +30,8 @@
     </div>
   </header>
   <div class='mobile'>
-    <a class='twitter' href='http://twitter.com/apsdehal' rel='me'><i class='icon-twitter'></i></a>
-    <a class='github' href='http://github.com/apsdehal' rel='me'>Github</a>
+    <a class='twitter' href='http://twitter.com/{{site.twitterhandle}}' rel='me'><i class='icon-twitter'></i></a>
+    <a class='github' href='http://github.com/{{site.githubhandle}}' rel='me'>Github</a>
     <nav>
       <a href='/blog' class='blog-icon'><span>Blog</span></a>
       <a href='/rss.xml' class='rss'><span><i class='icon-rss'></i> RSS</span></a>
