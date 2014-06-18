@@ -14,16 +14,15 @@
   </head>
   <header>
     <div class='social'>
+      <div class='info'>
+        <a class='me' rel='author' href='/'></a>
+      </div>
       <div class='social-icons'>
         <a class='twitter' href='http://twitter.com/{{site.twitterhandle}}' rel='me'><i class='icon-twitter'></i></a>
         <a class='github' href='http://github.com/{{site.githubhandle}}' rel='me'><i class='icon-github'></i></a>
         <a class='google' href='http://plus.google.com/{{site.plushandle}}' rel='me'><i class='icon-plus'></i></a>
         <a class='fb' href='http://facebook.com/{{site.fbhandle}}' rel='me'><i class='icon-facebook'></i></a>
       </div>
-      <div class='info'>
-        <a class='me' rel='author' href='/'>{{ site.name }}</a>
-      </div>
-
       <div class='nav'>
         <nav>
           <a href='/blog' class='blog-icon'><span>Blog</span></a>
