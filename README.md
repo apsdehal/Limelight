@@ -33,5 +33,13 @@ class: post
 
 ```
 
-And save the post in `_posts` directory, you will have to create it. 
+Add content below this and save the post in `_posts` directory (you will have to create it).
 
+#Todo
+
+- Themes
+- More customizations options
+
+#License
+
+Open sourced under [MIT License](LICENSE.md) 
