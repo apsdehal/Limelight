@@ -12,7 +12,7 @@
   <link rel='alternate' type='application/rss+xml' href='/rss.xml'>
   <title>{% if page.title %} {{ page.title }} {% else %} {{ site.name }}  {% endif %}</title>
   </head>
-  <header>
+  <header class='screen'>
     <div class='social'>
       <div class='info'>
         <a class='me' rel='author' href='/' title='{{ site.name }}'></a>
@@ -32,12 +32,18 @@
     </div>
   </header>
   <header class='mobile'>
-    <a class='twitter' href='http://twitter.com/{{site.twitterhandle}}' rel='me'><i class='icon-twitter'></i></a>
-    <a class='icon-github' href='http://github.com/{{site.githubhandle}}' rel='me'></a>
-    <nav>
-      <a href='/blog' class='blog-icon'><span>Blog</span></a>
-      <a href='/rss.xml' class='rss'><span><i class='icon-rss'></i> RSS</span></a>
-    </nav>
+    <div class='social'>
+      <div class='social-icons'>
+        <a class='twitter' href='http://twitter.com/{{site.twitterhandle}}' rel='me'><i class='icon-twitter'></i></a>
+        <a href='http://github.com/{{site.githubhandle}}' rel='me'><i class='icon-github'></i></a>
+      </div>
+      <div class='nav'>
+        <nav>
+          <a href='/blog' class='blog-icon'><span>Blog</span></a>
+          <a href='/rss.xml' class='rss'><span><i class='icon-rss'></i> RSS</span></a>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <div class='main' role='main'>

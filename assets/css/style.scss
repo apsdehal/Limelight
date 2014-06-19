@@ -41,19 +41,6 @@ html {
     blockquote {
       margin-bottom: 14px;
     }
-    header.mobile{
-      display: none;
-      a{
-        text-decoration: none !important;
-        &:link,
-        &:visited {
-          color: $visited-text;
-        }
-        &:hover {
-          color: $hover-text;
-        }
-      }
-    }
     h1, h2, h3, h4,
     .description,
     .welcome {
@@ -144,10 +131,10 @@ html {
       // background:#fff;
       position: relative;
       border-radius:4px;
-      height: 495px;
       margin-left: 2%;
       margin-top: 2%;
     }
+
     article {
       padding: 25px 25px 10px 25px;
       img {
@@ -178,7 +165,7 @@ html {
         }
       }
     }
-    header {
+    header.screen {
       height: 80px;
       overflow: hidden;
       font-family: sans-serif;
@@ -273,6 +260,43 @@ html {
         }
       }
     }
+    header.mobile{
+      .social{
+        height: 100%;
+      }
+      display: none;
+      height: 80px;
+      font-size: 20px;
+      .social{
+        div {
+          position:relative;
+          float: left;
+          top: 50%;
+        }
+      }
+      .social-icons{
+        padding-right: 1%;
+        width: 30%;
+        a{
+          margin-top: 3%;
+        }
+      }
+      .nav{
+        width: 70%;
+      }
+      a{
+        margin: 0 0;
+        text-decoration: none !important;
+        &:link,
+        &:visited {
+          color: $main-text;
+        }
+        &:hover {
+          background-color: $hover-text;
+        }
+      }
+    }
+
     .tags {
       overflow: auto;
       margin-left: -5px;
@@ -370,10 +394,15 @@ html {
 
 /* HTML class specific queries */
 
-.home article {  
+.home {
+  article {  
   /* Uncomment this to use background image */
   // background: url("../img/welcome.jpeg") left top no-repeat;
   background-size: 100% 100%;
+  }
+  article, aside{    
+    height: 495px;
+  }
 }
 
 
@@ -401,11 +430,11 @@ html {
       font-size: 0.9em;
     }
   }
-  .mobile{
+  header.mobile{
     font-size: 0.9em;
-    display:block;
+    display:block !important;
   }
-  .social{
+  header.screen{
     display:none;
   }
 }
