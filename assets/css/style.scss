@@ -207,8 +207,9 @@ html {
         .social-icons{
           top: 30%;
           a{
+            width: 25%;
             font-size: 25px;
-            line-height: 30px;
+            line-height: 25px;
             padding: 5px;
             padding-top: 8px;
             vertical-align: middle;
@@ -236,8 +237,6 @@ html {
           float: left;
           height: 44px;
           overflow: hidden;
-        }
-        a:hover {
         }
         span {
           display: inline-block;
@@ -276,6 +275,44 @@ html {
         }
       }
     }
+    .tags {
+      overflow: auto;
+      margin-left: -5px;
+      padding: 0;
+      li {
+        margin: 0 0 5px 5px;
+        float: left;
+        border: none;
+        background: none;
+        padding: 0;
+        &:before {
+          display: none;
+        }
+      }
+      a{
+        padding: 0 6px;
+        line-height: 1.8em;
+        display: inline-block;
+        background: #f4efe9;
+        position: relative;
+        border-radius: 4px;
+        span {
+          font-size: 10px;
+          color: #777;
+          margin-left: 5px;
+          line-height: 1em;
+        }
+      }
+      [data-active] {
+        background: #1e87dd;
+        cursor: default;
+        color: #fff;
+        span{
+          color: #ccc;
+        }
+      }
+    }
+
 
     .me {
       display: inline-block;
