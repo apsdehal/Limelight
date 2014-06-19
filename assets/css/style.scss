@@ -131,8 +131,6 @@ html {
       overflow: auto;
       display: block;
       line-height: inherit;
-      margin-left: -25px;
-      margin-right: -25px;
       border-radius: none;
     }
     blockquote {
@@ -293,7 +291,7 @@ html {
         padding: 0 6px;
         line-height: 1.8em;
         display: inline-block;
-        background: #f4efe9;
+        background: rgba(0,0,0,0.1);
         position: relative;
         border-radius: 4px;
         span {
@@ -349,8 +347,35 @@ html {
       height: 149px;
       text-indent: -9999px;
     }
+    .blog__item {
+      border-top: 1px solid #ebebeb;
+      overflow: auto;
+      h3 {
+        line-height: 55px;
+        margin: 0;
+        padding: 0;
+      }
+      .date {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 80px;
+        font-weight: bold;
+        line-height: 55px;
+        font-size: 10px;
+      }
+    }
   }
 }
+
+/* HTML class specific queries */
+
+.home article {  
+  /* Uncomment this to use background image */
+  // background: url("../img/welcome.jpeg") left top no-repeat;
+  background-size: 100% 100%;
+}
+
 
 /* Media Queries */
 
