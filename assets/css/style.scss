@@ -24,7 +24,7 @@ html {
     max-width: 90%;
     margin: auto;
     position:relative;
-    background: #DFD297 url("../img/bg_pattern.jpg") repeat-x;
+    background: #eee url("../img/bg_pattern.jpg") repeat;
     font: 16px/1.5 sans-serif;
     color: #333;
     a {
@@ -170,14 +170,12 @@ html {
       overflow: hidden;
       font-family: sans-serif;
       font-weight: 600;
-      margin-left: 2%;
+      margin-left: 1%;
       margin-right: 4%;
       margin-top: 1%;
-      // background:rgba(255,255,255,0.6);
       .social {
         width: 100%;
         height: 100%;
-        // top: 5%;
         div{
           float:left;
           position: relative;
@@ -185,14 +183,13 @@ html {
         .nav{
           float: right;
           right: 5%;
-        }
-        .info{
-          // left: 27%;
+          font-size: 18px;
         }
         .social-icons{
           top: 30%;
+          margin-left: 1%;
           a{
-            width: 25%;
+            width: 20%;
             font-size: 25px;
             line-height: 25px;
             padding: 5px;
@@ -266,11 +263,16 @@ html {
         margin-left: 5%; 
       }
       .info{
-        // margin-left: -40%;
         height: 50%;
         .me{
           left:0%;
-          font-size: 20px;
+          font-size: 18px;
+          &:before{
+            width: 55px;
+            height:55px;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
         }
       }
       display: none;
@@ -286,12 +288,20 @@ html {
       }
       .social-icons{
         padding-right: 1%;
-        width: 30%;
-        padding-top: 2%;
+        width: 35%;
         clear: both;
+        font-size: 25px;
       }
       .nav{
-        width: 70%;
+        width: 60%;
+        right: 2%;
+        text-align: right;
+        font-size: 18px;
+        i{
+          position: relative;
+          top: 1.5px;
+          left: 4px;  
+        }
       }
       a{
         margin: 0 0;
@@ -299,9 +309,6 @@ html {
         &:link,
         &:visited {
           color: $main-text;
-        }
-        &:hover {
-          background-color: $hover-text;
         }
       }
     }
@@ -351,7 +358,7 @@ html {
       vertical-align: top;
       float: left;
       position: relative;
-      left: 50%;
+      left: 30%;
       &:hover {
         background: none;
       }
@@ -414,7 +421,6 @@ html {
   }
 }
 
-
 /* Media Queries */
 
 @media (max-width: 992px) {
@@ -425,7 +431,6 @@ html {
 }
 @media (max-width: 768px){
   .post ,.error404 aside{
-    margin-top: 5%;
     width: 100%;
     margin-left: 0%;
   }
