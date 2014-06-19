@@ -263,23 +263,32 @@ html {
     header.mobile{
       .social{
         height: 100%;
+        margin-left: 5%; 
+      }
+      .info{
+        // margin-left: -40%;
+        height: 50%;
+        .me{
+          left:0%;
+          font-size: 20px;
+        }
       }
       display: none;
-      height: 80px;
+      height: 120px;
       font-size: 20px;
       .social{
-        div {
+        .social-icons, .nav {
           position:relative;
           float: left;
-          top: 50%;
+          top: 10%;
+          height: 50px;
         }
       }
       .social-icons{
         padding-right: 1%;
         width: 30%;
-        a{
-          margin-top: 3%;
-        }
+        padding-top: 2%;
+        clear: both;
       }
       .nav{
         width: 70%;

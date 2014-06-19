@@ -33,6 +33,9 @@
   </header>
   <header class='mobile'>
     <div class='social'>
+      <div class='info'>
+        <a class='me' rel='author' href='/' title='{{ site.name }}'>{{site.name}}</a>
+      </div>
       <div class='social-icons'>
         <a class='twitter' href='http://twitter.com/{{site.twitterhandle}}' rel='me'><i class='icon-twitter'></i></a>
         <a href='http://github.com/{{site.githubhandle}}' rel='me'><i class='icon-github'></i></a>
