@@ -4,8 +4,16 @@ Limelight is a light toned, describing theme for Jekyll.
 
 #Screenshots
 
+Welcome Page
+
 ![Screenshot of Welcome Page](http://i.imgur.com/HK6Jj1O.png)
+
+Sample Post page
+
 ![Screenshot of Post](http://i.imgur.com/kEkcJYy.png)
+
+Mobile layouts
+
 ![Screenshot of Mobile Home](http://i.imgur.com/mpQAj6j.png) ![Screenshot of Post](http://i.imgur.com/IZ5a80M.png)
 
 #Features
