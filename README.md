@@ -55,4 +55,6 @@ Add content below this and save the post in `_posts` directory (you will have to
 
 #License
 
+Feel free to fork and contribute to the project, just create a pull request.
+
 Open sourced under [MIT License](LICENSE.md) 
