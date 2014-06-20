@@ -4,6 +4,10 @@ Limelight is a light toned, describing theme for Jekyll.
 
 #Screenshots
 
+![Screenshot of Welcome Page](http://i.imgur.com/HK6Jj1O.png)
+![Screenshot of Post](http://i.imgur.com/kEkcJYy.png)
+![Screenshot of Mobile Home](http://i.imgur.com/mpQAj6j.png) ![Screenshot of Post](http://i.imgur.com/IZ5a80M.png)
+
 #Features
 - Responsive design
 - Customizable
@@ -18,6 +22,7 @@ Limelight is a light toned, describing theme for Jekyll.
 - Use `jekyll serve` to run the site live.
 - You can use `source watch.sh` to watch changes over screen.scss in case you plan to change default css
 - Add your own avatar and welcome picture in `assets/img/` with names `avatar.jpeg` and `welcome.jpeg`
+- To use welcome image, uncomment line 415 in `assets/css/style.scss`
 
 ##Creating Posts
 
