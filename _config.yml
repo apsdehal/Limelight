@@ -11,3 +11,4 @@ production_url: you.github.io
 permalink: /blog/:title 
 highlighter: pygments
 markdown: redcarpet
+baseurl: /
